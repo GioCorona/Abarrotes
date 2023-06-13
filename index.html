@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Abarrotes</title>
+</head>
+
+<body>
+    <div class="tira">
+
+    </div>
+    <div class="container">
+        <h1 class="text-center text-danger mt-3">Abarrotes "Doña Joce"</h1>
+        <div class="row">
+            <div class="col-12 col-lg-7 mt-3">
+                <div class="marco-tabla">
+                    <table class="table table-light table-hover">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Tamaño</th>
+                                <th>Cantidad</th>
+                                <th>Precio Unitario</th>
+                                <th>Total</th>
+                                <th>Imagen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-center">
+                    <button id="limpiar" class="btn btn-info px-4">Limpiar <i class="fa-solid fa-broom"></i></button>
+                    <button id="borrar" class="btn btn-danger ms-4 px-4">Borrar <i class="fa-solid fa-circle-xmark"></i></button>
+                    <button id="guardar" class="btn btn-success ms-4 px-4">Guardar <i class="fa-solid fa-check"></i></button>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 mt-3">
+                <form action="#" class="row" id="form">
+                    <div class="col-12 col-sm-6">
+                        <input type="hidden" name="id" id="id">
+                        <div class="form-group">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="tamaño" class="form-label">Tamaño</label>
+                            <select name="tamaño" id="tamaño" class="form-select" required>
+                                <option value="">Seleccione</option>
+                                <option value="Chico">Chico</option>
+                                <option value="Mediano">Mediano</option>
+                                <option value="Grande">Grande</option>
+                            </select>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="cantidad" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="cantidad" name="cantidad" min="0" required>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="precio" class="form-label">Precio</label>
+                            <input type="number" class="form-control" id="precio" name="precio" min="0" required>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="total" class="form-label">Total</label>
+                            <input type="number" class="form-control" id="total" name="total" disabled>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="form-group">
+                            <label for="imagen" class="form-label text-start">Imagen</label>
+                            <div class="marco text-center mx-auto">
+                                <div class="cont-imagen">
+                                    <img src="images/camara.png" alt="Imagen del producto" id="imagen-producto"
+                                        width="100%" class="my-auto">
+                                </div>
+                            </div>
+                            <div class="text-center mt-3">
+                                <label for="imagen" class="btn btn-secondary px-4">Subir imagen <i class="fa-regular fa-image"></i></label>
+                            </div>
+                        </div>
+                        <input type="file" class="form-control" id="imagen" name="imagen" hidden>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/c3214449a0.js" crossorigin="anonymous"></script>
+    <script src="js/pouchdb.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/base.js"></script>
+</body>
+
+</html>

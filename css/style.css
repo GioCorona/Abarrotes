@@ -1,0 +1,51 @@
+body{
+    background-color: #ffffc1;
+}
+
+.tira {
+    display: block;
+    height: 40px;
+	background-color: #ffffff;
+	background-image: linear-gradient(
+		to right,
+		#ed1b24,
+		#ed1b24 40px,
+		#ffffff 40px,
+		#ffffff
+	);
+	background-size: 80px 100%;
+}
+
+.marco{
+    position: relative;
+    width: 100%;
+    max-width: 180px;
+    background-color: #fec1be;
+}
+
+.marco:after {
+	display: block;
+    content: '';
+	background-color: #fec1be;
+	padding-bottom: 100%;
+}
+
+.cont-imagen{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+table tbody {
+	display: block;
+    height: 400px;
+    overflow-y: auto;
+}
+
+table thead, table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
